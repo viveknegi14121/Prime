@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.vivek.mc1.MainActivity"
+    android:background="#50de63">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttop"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IS "
+            android:id="@+id/Is"
+            android:layout_gravity="top|center_vertical|right"
+            android:textSize="20dp"
+            android:textColor="#941a1a"
+            android:textStyle="bold|italic" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:id="@+id/number"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" A PRIME NUMBER ?"
+            android:id="@+id/st"
+            android:layout_gravity="top|center_vertical|right"
+            android:textSize="20dp"
+            android:textColor="#941a1a"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layoutbuttons"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct"
+            android:layout_marginRight="25dp"
+            android:id="@+id/correct"
+            android:background="@drawable/button"
+            android:onClick="oncc"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INCORRECT"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button"
+            android:id="@+id/incorrect"
+            android:onClick="onci"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:id="@+id/next"
+            android:background="@drawable/button"
+            android:textColor="#941a1a"
+            android:onClick="oncn"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/layoutbuttons"
+        android:layout_marginTop="30dp"
+        android:id="@+id/layoutcounts"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/layout3"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Number of Correct Counts:   "
+                android:textSize="20dp"
+                android:layout_below="@+id/layoutbuttons"
+                android:id="@+id/NC"
+                android:layout_gravity="left|bottom"
+                android:textStyle="bold|italic"
+                android:textColor="#c3078a" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="0"
+                android:textSize="20dp"
+                android:id="@+id/no_correct_count"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/layout4"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Number of Incorrect Counts: "
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:layout_below="@+id/layoutbuttons"
+                android:id="@+id/NI"
+
+                android:layout_gravity="left|bottom"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="0"
+                android:textSize="20dp"
+                android:id="@+id/no_incorrect_count"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
